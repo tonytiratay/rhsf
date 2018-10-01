@@ -64,18 +64,35 @@ Pour que tous vos éléments s'alignent bien, je ne vois que l'utilisation du sy
 > sais-tu comment supprimer les modules de langue et de connexion, et la mention « Free Joomla templates by AgeThemes » ?
 
 
-jkhkjh
+Normalement ces modules doivent être visibles dans l'administration de joomla dans les modules publiés. Il suffit de les désactiver, ou des les mettre dans une position qui n'existe pas si vous les appelez pour les intégrer à la main (comme dans un article, ou le bandeau du haut)
 
 
 ### Pop-up connexion : 
 
 > je n’arrive pas à appliquer le nouveau template à cette pop-up. Si je ne me trompe pas, il faudrait que l’article qui s’affiche dans la pop-up soit rattaché à un lien de menu auquel le template serait assigné. Mais lorsque je vais dans la catégorie correspondante (« Articles pop up »), les liens parents qui me sont proposés sont des liens publiés. Je pensais la rattacher au menu hide, mais ça ne semble pas possible. Peux-tu m’expliquer comment faire ?
 
-dfdgdf
+Il me semble que l'on a reglé ce point au téléphone la dernière fois, tu me confirme ?
 
 ### Page d’accueil déconnecté : 
 
-> j’aimerais réduire la hauteur de la grande photo. Le format de la photo que j’ai chargée devrait le permettre, mais je ne trouve pas les paramètres pour régler ça. Comment dois-je faire ? Et aurais-tu une idée pour rendre les textes et logos sur cette photo plus lisibles ? J’ai augmenté l’ombre des textes, assombri la photo de fond. Si jamais tu as d’autres idées/astuces, je suis intéressée !
+> j’aimerais réduire la hauteur de la grande photo. Le format de la photo que j’ai chargée devrait le permettre, mais je ne trouve pas les paramètres pour régler ça. Comment dois-je faire ? 
+
+La grande photo est une image d'arriere plan. en faisant un clic droit dessus, puis inspecter, je trouve le code css suivant.
+
+```css
+
+#qx-section-1215 {
+    background-image: url(/images/Photo-accueil-deco.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.25);
+    position: relative;
+}
+
+```
+
+> Et aurais-tu une idée pour rendre les textes et logos sur cette photo plus lisibles ? J’ai augmenté l’ombre des textes, assombri la photo de fond. Si jamais tu as d’autres idées/astuces, je suis intéressée !
 
 ### Page d’accueil connecté (Club des mécènes) : 
 
