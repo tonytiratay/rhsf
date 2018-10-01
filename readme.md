@@ -82,7 +82,7 @@ La grande photo est une image d'arriere plan. en faisant un clic droit dessus, p
 ```css
 
 #qx-section-1215 {
-    background-image: url(/images/Photo-accueil-deco.jpg);
+    background-image: url(/images/Photo-accueil-deco.jpg); 
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -92,7 +92,17 @@ La grande photo est une image d'arriere plan. en faisant un clic droit dessus, p
 
 ```
 
+La propriété backgoundSize détermine comment la taille de l'image est gérée. 
+
+Cover signifie que l'image cherchera a prendre toute la place sans laisser aucun blanc, quitte à déborder. Ce qui détermine la hauteur de l'image ici n'est donc pas l'image en tant que telle, mais la hauteur de son conteneur (la section qui contient tous les éléments au dessus de l'image).
+
+Pour réduire la hauteur de l'image, il faut donc réduire la hauteur de la section elle meme. Je pense que dans les paramètres de Quix tu dois pouvoir gérer cela. Il semble que la hateur soit pour l'instant reglée pour prendre 100% de la hauteur disponible.
+
+
 > Et aurais-tu une idée pour rendre les textes et logos sur cette photo plus lisibles ? J’ai augmenté l’ombre des textes, assombri la photo de fond. Si jamais tu as d’autres idées/astuces, je suis intéressée !
+
+Personnelement je trouve le texte très lisible :)
+
 
 ### Page d’accueil connecté (Club des mécènes) : 
 
