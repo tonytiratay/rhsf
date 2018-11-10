@@ -109,12 +109,23 @@ Personnelement je trouve le texte très lisible :)
 > je n’arrive pas à mettre en forme le composant LinkedIn. J’aimerais qu’il n’y ait plus les barres de défilement (hauteur comme largeur). Sais-tu comment faire ? Et si possible, j’aimerais également avoir une hauteur fixe : si le texte devait dépasser cette hauteur, il serait coupé et il y aurait 3 petits points. On pourrait aussi supprimer la possibilité de faire apparaître les photos, pour éviter que ça dépasse trop vers le bas.
 En parallèle, pour l’amélioration du nouveau visuel cartes-pays : j’ai fait quelques nouvelles modifications sur l’article Discriminations et harcèlement de la catégorie Qatar.
 
-sdfsdf
+Comme expliqué par téléphone, tu ne vas pas pouvoir regler grand chose sur ce composant. Puisqu'il il s'agit d'une intégration exterieur, le code n'est pas fourni par joomla mais par linkedin directement. 
 
 > Comment peut-on baisser les titres de catégorie qui s’affichent dans les menus à gauche des cartes pays ? « Qatar » apparaît trop haut en haut à gauche. J’aimerais également agrandir la taille de police.
 
-zfze
+Il te faut identifier la classe de l'élément sur lequel tu veux agir. Un clic droit dessus, puis "inspecter" (dans chrome). Ça ouvrira une console, dans laquelle il faut que tu retrouves la classe appliquée. De là, il faut ajouter cette classe à ton css, et modifier ses styles. Pour ce que tu me dis là, ça pourrait ressembler à ça:
+
+```css
+.classeDeLelement {
+  margin-top: 10px; // marge exterieur
+  font-size: 24px; // Taille police
+}
+```
+
+En tapant "css font" dans google tu devrais trouver facilement les différentes propriétés que tu peux modifier
 
 - De la même manière, j’aimerais abaisser la date de dernière modification qui apparaît en haut de l’article et qui mord sur le menu. Est-il également possible d’ajouter automatiquement à cette fonction d’affichage de la date la mention « Dernière révision le » ?
+
+Pour abaisser la date, même méthode que ci dessus. Pour ajouter "dernière révision le", si c'est faisable c'est dans les paramètres d'articles de joomla. Dans contenu -> articles, cliquer sur paramètres. Si dans un des onglets tu as un champ pour modifier le texte de la date, c'est faisable, sinon, non :)
 
 zefzefz
